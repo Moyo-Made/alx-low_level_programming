@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * main - prints the minimum number of coins to make change for an amount of money
+ * main - prints the minimum number of coins to make
+ * change for an amount of money
  * @argc: argument count
  * @argv: argument vector
  *
@@ -11,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	size_t i;
 	int amount;
 	int coins[] = {25, 10, 5, 2, 1};
 	int num_coins;
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	
+
 	amount = atoi(argv[1]);
 
 	if (amount < 0)
@@ -31,7 +32,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (i = 0; sizeof(coins) / sizeof(coins[0]); i++)
+	for (i = 0; i < sizeof(coins) / sizeof(coins[0]); i++)
 	{
 		num_coins = amount / coins[i];
 
