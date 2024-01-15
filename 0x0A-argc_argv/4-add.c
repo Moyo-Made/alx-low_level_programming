@@ -11,8 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int num;
-	int i;
+	int num, i;
 
 	int sum = 0;
 
@@ -27,19 +26,13 @@ int main(int argc, char *argv[])
 	{
 		num = atoi(argv[i]);
 
-		if (num == 0 && argv[i][0] != '0')
+		if ((num <= 0) || (num == 0 && argv[i][0] != '0'))
 		{
 			printf("Error\n");
 			return (1);
 		}
 
-		if (num <= 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-
-		sum = sum + num;
+		sum += num;
 	}
 
 	printf("%d\n", sum);
