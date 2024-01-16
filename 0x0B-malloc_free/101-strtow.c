@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * *count_word - function to count the number of words in a string
+ * count_word - function to count the number of words in a string
  * @s: the string
  * Return: number of words.
 */
@@ -25,7 +25,7 @@ int *count_word(char *s)
 	return (w);
 }
 /**
- * **strtow - split a string into two words
+ * strtow - split a string into two words
  * @str: string to split
  * Return: pointer to an array of strings(Success)
  * or NULL(Error)
@@ -71,7 +71,7 @@ char **strtow(char *str)
 				c = 0;
 			}
 		}
-		else if (C++ == 0)
+		else if (c++ == 0)
 		{
 			start = i;
 		}
