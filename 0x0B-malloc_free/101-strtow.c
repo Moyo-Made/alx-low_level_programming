@@ -10,7 +10,7 @@ char **strtow(char *str)
 	int word_count, i, j, word_index, start, word_length;
 	char **words;
 
-	if (str == NULL || str == '\0')
+	if (str == NULL || *str == '\0')
 	{
 		return (NULL);
 	}
