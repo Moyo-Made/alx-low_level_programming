@@ -5,7 +5,7 @@
  * @s: the string
  * Return: number of words.
 */
-int *count_word(char *s)
+int count_word(char *s)
 {
 	int flag, c, w;
 	flag = 0;
@@ -66,7 +66,7 @@ char **strtow(char *str)
 					*tmp++ = str[start++];
 				}
 				*tmp = '\0';
-				matrix[k] = tmp - c;
+				matrix[k] = tmp;
 				k++;
 				c = 0;
 			}
