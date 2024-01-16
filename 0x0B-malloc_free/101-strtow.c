@@ -9,6 +9,7 @@ char **strtow(char *str)
 {
 	int word_count, i, j, word_index, start, word_length;
 	char **words;
+	
 	if (str == NULL || *str == '\0')
 	{
 		return (NULL);
@@ -16,7 +17,7 @@ char **strtow(char *str)
 	word_count = 0;
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
+		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0' || str[i + 1] == '.'))
 		{
 			word_count++;
 		}
