@@ -1,31 +1,29 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * strtow - a function that splits a string into words.
+ * strtow - splits a string into words.
  * @str: the string
- * Return: a function that splits a string into words.
+ * Return: A pointer to an array of strings (words).
 */
 char **strtow(char *str)
 {
 	int word_count, i, j, word_index, start, word_length;
 	char **words;
-
 	if (str == NULL || *str == '\0')
 	{
 		return (NULL);
 	}
 	word_count = 0;
-
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
 		{
 			word_count++;
 		}
+	}
 		if (word_count == 0)
 		{
 			return (NULL);
-		}
 		}
 		words = (char **)malloc((word_count + 1) * sizeof(char *));
 		if (words == NULL)
@@ -34,7 +32,6 @@ char **strtow(char *str)
 		}
 		word_index = 0;
 		start = 0;
-
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			if (str[i] != ' ')
