@@ -62,7 +62,7 @@ char **strtow(char *str)
 					k++;
 				}
 			}
-			words[k] = NULL;
 		}
+		words[k] = NULL;
 		return (words);
 }
