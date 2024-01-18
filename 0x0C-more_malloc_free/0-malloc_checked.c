@@ -18,5 +18,6 @@ void *malloc_checked(unsigned int b)
 		_putchar('\n');
 		exit(98);
 	}
+	
 	return (ptr);
 }
