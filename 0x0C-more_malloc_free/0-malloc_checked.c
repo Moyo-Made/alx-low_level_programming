@@ -13,7 +13,6 @@ void *malloc_checked(unsigned int b)
 
 	if (ptr == NULL)
 	{
-		write(1, "Memory Error\n", 13);
 		exit(98);
 	}
 	return (ptr);
