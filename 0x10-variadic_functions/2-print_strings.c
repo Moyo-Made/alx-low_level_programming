@@ -7,7 +7,7 @@
  * @separator: The string to be printed between two strings
  * @n: The number of strings passed to the function.
  * @...: A variable number of strings to be printed.
- * Description: if separator is NULL not printed
+ * Return: if separator is NULL not printed
  * if one of the strings is NULL, (nil) is printed.
 */
 void print_strings(const char *separator, const unsigned int n, ...)
