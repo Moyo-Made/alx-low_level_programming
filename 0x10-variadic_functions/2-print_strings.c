@@ -3,10 +3,10 @@
 #include <stdarg.h>
 
 /**
- * print_string - Prints number followed by a new line
- * @separator: The string to be printed between numbers
- * @n: The number of integer passed to the function.
- * @...: A variable number of numbers to be printed.
+ * print_strings - Prints strings followed by a new line
+ * @separator: The string to be printed between two strings
+ * @n: The number of strings passed to the function.
+ * @...: A variable number of strings to be printed.
  * Description: if separator is NULL not printed
  * if one of the strings is NULL, (nil) is printed.
 */
