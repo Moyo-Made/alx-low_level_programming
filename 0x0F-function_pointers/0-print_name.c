@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <unistd.h>
 /**
  * print_name - Prints each character of a name using a
  * given function pointer
