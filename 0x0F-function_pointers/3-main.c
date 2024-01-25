@@ -5,8 +5,8 @@
 /**
  * main - Prints th result of simple operations
  * @argc: Argument counts supplied to the program
- * @argv: An array of pointers to th arguments
- * Return: Always 0 (Success)
+ * @argv: An array of pointers to the arguments
+ * Return: Always 0(Success)
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
@@ -18,6 +18,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+
 	num1 = atoi(argv[1]);
 	op = argv[2];
 	num2 = atoi(argv[3]);
