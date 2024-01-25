@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-#include <unistd.h>
+#include <stdio.h>
 /**
  * print_name - Prints each character of a name using a
  * given function pointer
@@ -14,12 +14,4 @@ void print_name(char *name, void (*f)(char *))
 		f(*name);
 	}
 	f('\n');
-}
-/**
- * print_char - Prints a character to standard output
- * @c: The character to be printed
- */
-void print_char(char c)
-{
-	_putchar(c);
 }
