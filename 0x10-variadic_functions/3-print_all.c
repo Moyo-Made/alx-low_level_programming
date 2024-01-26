@@ -37,7 +37,8 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 			}
-			sep = ", ";
+			if (format[i + 1])
+			printf(", ");
 			i++;
 		}
 	}
