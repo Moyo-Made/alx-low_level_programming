@@ -9,7 +9,6 @@ void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *str, *sep = "";
-
 	va_list list;
 
 	va_start(list, format);
@@ -35,10 +34,9 @@ void print_all(const char * const format, ...)
 					str = "(nil)";
 				printf("%s%s", sep, str);
 				break;
-
 			default:
-				i++;
-				continue;
+				fprintf(stderr, "Unknown format specifier: %c\n", format[i])
+				break;
 			}
 			sep = ",";
 			i++;
