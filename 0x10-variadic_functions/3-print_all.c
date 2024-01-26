@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 				break;
 			}
 			if (format[i + 1])
-			printf(", ");
+				printf(", ");
 			i++;
 		}
 	}
