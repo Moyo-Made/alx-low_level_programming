@@ -4,7 +4,7 @@
  * delete_nodeint_at_index - delete a node in the list at a certain index
  * @head: pointer to the first element in the list
  * @index: the index of the node
- * Return: 1(Success), -1(Fail)
+ * Return: 1(Success), or -1(Fail)
 */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -33,5 +33,5 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	temp->next = current->next;
 	free(current);
 
-	return (1);~
+	return (1);
 }
