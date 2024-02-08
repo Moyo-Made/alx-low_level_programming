@@ -4,6 +4,8 @@
  * set_bit - func sets the value of bits to 1 at a given index
  * @n: number to set
  * @index: index at which to set bit
+ *
+ * Return: value of bit set
 */
 int set_bit(unsigned long int *n, unsigned int index)
 {
